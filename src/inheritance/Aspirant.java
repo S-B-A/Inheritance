@@ -7,12 +7,14 @@ public class Aspirant extends Student {
         return scienceWork;
     }
     // конструктор аспирантов (аспирант - это студент с научной работой)
-    Aspirant(String pfirstName, String plastName, String pgroup, double pAverageMark, String pScienceWork){
-        super();
-        firstName = pfirstName;
-        lastName = plastName;
-        group = pgroup;
-        averageMark = pAverageMark;
+    public Aspirant(String pfirstName, String plastName, String pgroup, double pAverageMark, String pScienceWork)
+    {
+        super(pfirstName, plastName, pgroup, pAverageMark);
         scienceWork = setScienceWork(pScienceWork);
+    }
+    @Override
+    public int getScholarship() {
+        scholarship = (averageMark == 5) ? 200 : 180;
+        return scholarship;
     }
 }

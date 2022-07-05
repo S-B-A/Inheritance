@@ -18,16 +18,18 @@
 package inheritance;
 public class Inheritance {
     public static void main(String[] args) {
-        Student[] scholar = new Aspirant[6];
+        //Student scholar1 = new Aspirant("Саша", "Берг", "аспирант", 3.5, "Сетевое планирование на проихзводстве");
+        //System.out.println(scholar1.firstName + scholar1.lastName+ scholar1.averageMark+ scholar1.setScholarship()+"\n");
+        Student[] scholar = new Student[6];
         scholar[0] = new Student("Иван", "Иванов", "студент", 5.0);
         scholar[1] = new Student("Пётр", "Степанов", "студент", 4.85);
         scholar[2] = new Student("Мария", "Фёдорова", "студент", 5);
         scholar[3] = new Student("Семён", "Альтов", "студент", 3.7);
         scholar[4] = new Aspirant("Георгий", "Гришин", "аспирант", 4.9, "Проблемы развития мышиных детёнышей в присутствии львов.");
         scholar[5] = new Aspirant("Екатерина", "Буракова", "аспирант", 5, "Characterisation of conformational heterogeneity via higher-dimentional proton-detected solid-state NMR");
-        for (Student scholars: scholar
-             ) {
-            System.out.println(scholars);
+        for (Student scholars: scholar)
+        {
+            System.out.println(scholars.firstName + " " + scholars.lastName + ", " + scholars.group + ", средняя оценка " + scholars.averageMark + ", стипендия " + scholars.getScholarship());
         }
     }
 }
