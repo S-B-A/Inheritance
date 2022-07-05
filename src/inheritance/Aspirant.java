@@ -17,4 +17,8 @@ public class Aspirant extends Student {
         scholarship = (averageMark == 5) ? 200 : 180;
         return scholarship;
     }
+    @Override
+    public String displayStudentInfo(){
+        return firstName + " " + lastName + ", " + group + ", ср.оценка " + averageMark + ", стипендия " + getScholarship() + "\nРабота \"" + scienceWork + "\"\n";
+    }
 }

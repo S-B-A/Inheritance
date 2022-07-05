@@ -17,4 +17,8 @@ public class Student {
         scholarship = (averageMark == 5) ? 100 : 80;
         return scholarship;
     }
+
+    public String displayStudentInfo(){
+        return firstName + " " + lastName + ", " + group + ", ср.оценка " + averageMark + ", стипендия " + getScholarship() + "\n";
+    }
 }

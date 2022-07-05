@@ -29,7 +29,7 @@ public class Inheritance {
         scholar[5] = new Aspirant("Екатерина", "Буракова", "аспирант", 5, "Characterisation of conformational heterogeneity via higher-dimentional proton-detected solid-state NMR");
         for (Student scholars: scholar)
         {
-            System.out.println(scholars.firstName + " " + scholars.lastName + ", " + scholars.group + ", средняя оценка " + scholars.averageMark + ", стипендия " + scholars.getScholarship());
+            System.out.println(scholars.displayStudentInfo());
         }
     }
 }
